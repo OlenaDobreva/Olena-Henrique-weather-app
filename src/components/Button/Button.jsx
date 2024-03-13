@@ -1,3 +1,3 @@
-export default function Button() {
-  return <button>Submit</button>;
+export default function Button({ text, onDeleteActivity, activityId = null }) {
+  return <button onClick={() => onDeleteActivity(activityId)}>{text}</button>;
 }

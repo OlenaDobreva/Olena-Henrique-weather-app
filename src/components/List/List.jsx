@@ -1,8 +1,15 @@
-export default function List({ activities }) {
+import ListItem from "../ListItem/ListItem";
+
+export default function List({ activities, onDeleteActivity }) {
   return (
     <ul>
       {activities.map(({ id, name }) => (
-        <li key={id}>{name}</li>
+        <ListItem
+          key={id}
+          id={id}
+          name={name}
+          onDeleteActivity={onDeleteActivity}
+        />
       ))}
     </ul>
   );
