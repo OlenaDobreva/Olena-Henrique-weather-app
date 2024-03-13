@@ -1,7 +1,14 @@
 import "./App.css";
+import Form from "./components/Form/Form";
 
 function App() {
-  return <>Weather App</>;
+  function handleAddActivity() {}
+
+  return (
+    <>
+      <Form onAddActivity={handleAddActivity}></Form>
+    </>
+  );
 }
 
 export default App;
