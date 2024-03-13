@@ -1,3 +1,13 @@
-export default function Button({ text, onDeleteActivity, activityId = null }) {
-  return <button onClick={() => onDeleteActivity(activityId)}>{text}</button>;
+export default function Button({
+  text,
+  onDeleteActivity = null,
+  activityId = null,
+}) {
+  return (
+    <button
+      onClick={onDeleteActivity ? () => onDeleteActivity(activityId) : null}
+    >
+      {text}
+    </button>
+  );
 }
