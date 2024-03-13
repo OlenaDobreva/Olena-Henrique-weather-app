@@ -11,7 +11,7 @@ function App() {
     defaultValue: [],
   });
   const [weather, setWeather] = useState("");
-  console.log(activities);
+
   useEffect(() => {
     async function fetchWeather() {
       try {
