@@ -7,14 +7,7 @@ export default function Form({ onAddActivity }) {
     event.preventDefault();
     const data = new FormData(event.target);
     const formObj = Object.fromEntries(data);
-
-    // if (formObj.goodWeather === "on") {
-    //   formObj.isForGoodWeather = true;
-    // } else {
-    //   formObj.isForGoodWeather = false;
-    // }
-    formObj.isForGoodWeather = formObj.goodWeather === "on" ? true : false;
-
+    formObj.goodWeather = event.target.goodWeather.checked;
     onAddActivity(formObj);
     event.target.reset();
     event.target.firstChild.focus();
