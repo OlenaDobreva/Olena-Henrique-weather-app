@@ -5,3 +5,43 @@
   background-color: #fff;
   border-radius: 10px;
 }
+.main-wrapper {
+  padding: 2rem;
+  border: 1px solid #919fa8;
+  border-radius: 10px;
+}
+.main-wrapper.cloudy {
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 0.5) 0%,
+    rgba(136, 171, 177, 0.5) 100%
+  );
+}
+.main-wrapper.sunny {
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 0.5) 0%,
+    rgba(0, 212, 255, 0.5) 100%
+  );
+}
+.main-wrapper.partlySunny {
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 0.5) 40%,
+    rgba(0, 212, 255, 0.5) 100%
+  );
+}
+.main-wrapper.stormy {
+  background: linear-gradient(
+    0deg,
+    rgba(9, 9, 121, 0.5) 40%,
+    rgba(89, 109, 38, 0.5) 100%
+  );
+}
+.main-wrapper.rainy {
+  background: linear-gradient(
+    0deg,
+    rgba(43, 43, 67, 0.5) 40%,
+    rgba(0, 110, 255, 0.5) 100%
+  );
+}

@@ -11,13 +11,32 @@ function App() {
     defaultValue: [],
   });
   const [weather, setWeather] = useState("");
-
+  // console.log(weather);
+  let weatherCondition = "";
+  switch (weather.condition) {
+    case "🌤️":
+      weatherCondition = "partlySunny";
+      break;
+    case "🌧️":
+      weatherCondition = "rainy";
+      break;
+    case "☀️":
+      weatherCondition = "sunny";
+      break;
+    case "☁️":
+      weatherCondition = "cloudy";
+      break;
+    case "⛈️":
+      weatherCondition = "stormy";
+      break;
+  }
   async function fetchWeather() {
     try {
       const response = await fetch(
         "https://example-apis.vercel.app/api/weather"
       );
       const data = await response.json();
+
       setWeather(data);
     } catch (error) {
       console.log(error);
@@ -44,14 +63,14 @@ function App() {
   }
 
   return (
-    <>
+    <div className={`main-wrapper ${weatherCondition}`}>
       <ListHeading weather={weather} />
       <List
         activities={filteredActivities}
         onDeleteActivity={handleDeleteActivity}
       />
       <Form onAddActivity={handleAddActivity}></Form>
-    </>
+    </div>
   );
 }
 
