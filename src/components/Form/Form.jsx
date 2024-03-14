@@ -14,8 +14,8 @@ export default function Form({ onAddActivity }) {
   }
 
   return (
-    <>
-      <h1>Add new Activity</h1>
+    <div className="form-wrapper">
+      <h2>Add new Activity</h2>
       <form onSubmit={handleSubmit}>
         <Input type={"text"} name={"name"} labelText={"Name"} />
         <Input
@@ -25,6 +25,6 @@ export default function Form({ onAddActivity }) {
         />
         <Button text="Submit" className={"buttonSubmit"} />
       </form>
-    </>
+    </div>
   );
 }
