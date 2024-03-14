@@ -56,6 +56,14 @@ function App() {
     setActivities(activities.filter((activity) => activity.id !== id));
   }
 
+  if (weather === "") {
+    return (
+      <div className="loading">
+        <h1>Loading weather conditions...</h1>
+      </div>
+    );
+  }
+
   return (
     <div className={`main-wrapper ${weatherCondition}`}>
       <ListHeading weather={weather} />

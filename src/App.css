@@ -4,6 +4,9 @@
   background-color: #fff;
   border-radius: 10px;
 }
+.loading {
+  padding: 20px 40px;
+}
 .main-wrapper {
   padding: 2rem;
   border: 1px solid #919fa8;
