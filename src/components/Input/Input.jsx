@@ -1,8 +1,17 @@
-export default function Input({ type, name, labelText }) {
+import "./Input.css";
+
+export default function Input({ type, name, labelText, placeholderText = "" }) {
   return (
     <>
-      <label htmlFor={name}>{labelText}</label>
-      <input name={name} id={name} type={type} />
+      <label htmlFor={name}>
+        {labelText}
+        <input
+          placeholder={placeholderText}
+          name={name}
+          id={name}
+          type={type}
+        />
+      </label>
     </>
   );
 }

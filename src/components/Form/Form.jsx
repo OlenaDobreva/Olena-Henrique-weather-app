@@ -20,7 +20,12 @@ export default function Form({ onAddActivity }) {
     <div className="form-wrapper">
       <h2>Add new Activity</h2>
       <form onSubmit={handleSubmit}>
-        <Input type={"text"} name={"name"} labelText={"Name"} />
+        <Input
+          type={"text"}
+          name={"name"}
+          labelText={"Name"}
+          placeholderText={"Write your activity here..."}
+        />
         <Input
           type={"checkbox"}
           name={"goodWeather"}
