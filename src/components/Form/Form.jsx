@@ -31,7 +31,11 @@ export default function Form({ onAddActivity }) {
           name={"goodWeather"}
           labelText={"Good-weather activity"}
         />
-        <Button text="Submit" className={"buttonSubmit"} />
+        <Button
+          text="Submit"
+          className={"buttonSubmit"}
+          ariaLabel="Add a new activity"
+        />
       </form>
     </div>
   );
