@@ -66,7 +66,7 @@ function App() {
 
   return (
     <div className={`main-wrapper ${weatherCondition}`}>
-      <ListHeading weather={weather} />
+      <ListHeading weather={weather} weatherCondition={weatherCondition} />
       <List
         activities={filteredActivities}
         onDeleteActivity={handleDeleteActivity}

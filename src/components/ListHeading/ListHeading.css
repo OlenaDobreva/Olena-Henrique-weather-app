@@ -1,13 +1,18 @@
 .top-header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
-.icon {
-  font-size: 6rem;
+.icon img {
+  width: 130px;
 }
 .temperature {
-  font-size: 3rem;
+  color: #fff;
+  font-size: 7rem;
+}
+.temperature .smaller {
+  font-size: 2rem;
+  margin-left: -20px;
 }
 header.main h1 {
   font-size: 3.2rem;
