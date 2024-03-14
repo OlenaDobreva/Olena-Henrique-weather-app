@@ -23,7 +23,7 @@ export default function Form({ onAddActivity }) {
           name={"goodWeather"}
           labelText={"Good-weather activity"}
         />
-        <Button text="Submit" />
+        <Button text="Submit" className={"buttonSubmit"} />
       </form>
     </>
   );

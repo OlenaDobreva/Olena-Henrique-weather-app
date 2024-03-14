@@ -1,0 +1,11 @@
+button {
+  cursor: pointer;
+}
+.buttonList {
+  background: none;
+  border: none;
+}
+.buttonSubmit {
+  padding: 10px;
+  font-size: 1rem;
+}
