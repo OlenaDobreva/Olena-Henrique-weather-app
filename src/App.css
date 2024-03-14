@@ -45,3 +45,10 @@
     rgba(0, 110, 255, 0.5) 100%
   );
 }
+.main-wrapper.snow {
+  background: linear-gradient(
+    0deg,
+    rgba(244, 244, 245, 0.5) 40%,
+    rgba(220, 221, 222, 0.5) 100%
+  );
+}

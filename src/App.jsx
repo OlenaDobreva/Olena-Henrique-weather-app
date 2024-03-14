@@ -26,6 +26,9 @@ function App() {
     case "☁️":
       weatherCondition = "cloudy";
       break;
+    case "🌨️":
+      weatherCondition = "snow";
+      break;
     case "⛈️":
       weatherCondition = "stormy";
       break;
