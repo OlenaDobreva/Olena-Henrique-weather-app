@@ -19,7 +19,7 @@ function App() {
   const [activities, setActivities] = useLocalStorageState("activities", {
     defaultValue: storedActivities,
   });
-  console.log(activities);
+
   const [weather, setWeather] = useState("");
   // console.log(weather);
   let weatherCondition = "";
@@ -43,6 +43,7 @@ function App() {
       weatherCondition = "stormy";
       break;
   }
+
   async function fetchWeather() {
     try {
       const response = await fetch(
