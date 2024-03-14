@@ -10,3 +10,8 @@ ul li {
   display: flex;
   justify-content: space-between;
 }
+
+li.empty-activities {
+  background-color: #cb6751;
+  color: #fff;
+}

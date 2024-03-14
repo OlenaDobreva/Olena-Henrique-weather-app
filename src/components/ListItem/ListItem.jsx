@@ -1,9 +1,9 @@
 import Button from "../Button/Button";
 
-export default function ListItem({ id, name, onDeleteActivity }) {
+export default function ListItem({ id, name, onDeleteActivity = null }) {
   return (
     <li>
-      {name}{" "}
+      {name}
       <Button
         text={"❌"}
         className={"buttonList"}
