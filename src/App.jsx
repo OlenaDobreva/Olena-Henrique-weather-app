@@ -7,9 +7,19 @@ import { useEffect, useState } from "react";
 import useLocalStorageState from "use-local-storage-state";
 
 function App() {
+  const storedActivities = [
+    { id: uid(), name: "Going to a park", goodWeather: true },
+    { id: uid(), name: "Riding your bicycle", goodWeather: true },
+    { id: uid(), name: "Walking the dog", goodWeather: true },
+    { id: uid(), name: "Staying home with family", goodWeather: false },
+    { id: uid(), name: "Going to a museum", goodWeather: false },
+    { id: uid(), name: "Baking a cake", goodWeather: false },
+    { id: uid(), name: "Watching Netflix", goodWeather: false },
+  ];
   const [activities, setActivities] = useLocalStorageState("activities", {
-    defaultValue: [],
+    defaultValue: storedActivities,
   });
+  console.log(activities);
   const [weather, setWeather] = useState("");
   // console.log(weather);
   let weatherCondition = "";
