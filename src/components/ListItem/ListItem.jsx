@@ -4,7 +4,12 @@ export default function ListItem({ id, name, onDeleteActivity }) {
   return (
     <li>
       {name}{" "}
-      <Button text={"❌"} activityId={id} onDeleteActivity={onDeleteActivity} />
+      <Button
+        text={"❌"}
+        className={"buttonList"}
+        activityId={id}
+        onDeleteActivity={onDeleteActivity}
+      />
     </li>
   );
 }
