@@ -13,28 +13,16 @@ function App() {
   });
 
   const [weather, setWeather] = useState("");
-  // console.log(weather);
-  let weatherCondition = "";
-  switch (weather.condition) {
-    case "🌤️":
-      weatherCondition = "partlySunny";
-      break;
-    case "🌧️":
-      weatherCondition = "rainy";
-      break;
-    case "☀️":
-      weatherCondition = "sunny";
-      break;
-    case "☁️":
-      weatherCondition = "cloudy";
-      break;
-    case "🌨️":
-      weatherCondition = "snow";
-      break;
-    case "⛈️":
-      weatherCondition = "stormy";
-      break;
-  }
+
+  const emojiToCondition = {
+    "🌤️": "partlySunny",
+    "🌧️": "rainy",
+    "☀️": "sunny",
+    "☁️": "cloudy",
+    "🌨️": "snow",
+    "⛈️": "stormy",
+  };
+  let weatherCondition = emojiToCondition[weather.condition] || "";
 
   async function fetchWeather() {
     try {
