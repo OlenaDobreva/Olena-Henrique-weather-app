@@ -5,7 +5,7 @@ import ListHeading from "./components/ListHeading/ListHeading";
 import { uid } from "uid";
 import { useEffect, useState } from "react";
 import useLocalStorageState from "use-local-storage-state";
-import { storedActivities } from "./data/data";
+import { storedActivities } from "./data/activities";
 import { emojiToCondition } from "./data/conditions";
 
 function App() {
