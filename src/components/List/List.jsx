@@ -7,11 +7,12 @@ export default function List({ activities, onDeleteActivity }) {
       {activities.length === 0 ? (
         <li className="empty-activities">There is no activity yet...</li>
       ) : (
-        activities.map(({ id, name }) => (
+        activities.map(({ id, name, category }) => (
           <ListItem
             key={id}
             id={id}
             name={name}
+            category={category}
             onDeleteActivity={onDeleteActivity}
           />
         ))

@@ -1,9 +1,20 @@
 import Button from "../Button/Button";
+import { categories } from "../../data/categories";
 
-export default function ListItem({ id, name, onDeleteActivity = null }) {
+export default function ListItem({
+  id,
+  name,
+  category,
+  onDeleteActivity = null,
+}) {
   return (
     <li>
-      {name}
+      <div>
+        <span className={`category ${categories[category - 1].name}`}>
+          {categories[category - 1].name}
+        </span>
+        {name}
+      </div>
       <Button
         text={"❌"}
         className={"buttonList"}

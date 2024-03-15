@@ -1,8 +1,9 @@
 import "./Form.css";
 import Input from "../Input/Input";
 import Button from "../Button/Button";
+import InputSelect from "../InputSelect/InputSelect";
 
-export default function Form({ onAddActivity }) {
+export default function Form({ onAddActivity, categories }) {
   function handleSubmit(event) {
     event.preventDefault();
     const data = new FormData(event.target);
@@ -20,12 +21,15 @@ export default function Form({ onAddActivity }) {
     <div className="form-wrapper">
       <h2>Add new Activity</h2>
       <form onSubmit={handleSubmit}>
-        <Input
-          type={"text"}
-          name={"name"}
-          labelText={"Name"}
-          placeholderText={"Write your activity here..."}
-        />
+        <div>
+          <Input
+            type={"text"}
+            name={"name"}
+            labelText={"Name"}
+            placeholderText={"Write your activity here..."}
+          />
+          <InputSelect categories={categories} />
+        </div>
         <Input
           type={"checkbox"}
           name={"goodWeather"}
