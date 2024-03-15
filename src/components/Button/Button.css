@@ -4,6 +4,7 @@ button {
 .buttonList {
   background: none;
   border: none;
+  margin-left: 10px;
 }
 .buttonSubmit {
   padding: 10px;
