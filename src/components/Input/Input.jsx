@@ -10,6 +10,7 @@ export default function Input({ type, name, labelText, placeholderText = "" }) {
           name={name}
           id={name}
           type={type}
+          maxLength={type === "text" ? 100 : undefined}
         />
       </label>
     </>
