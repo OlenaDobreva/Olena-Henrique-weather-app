@@ -9,7 +9,7 @@ export default function Form({ onAddActivity, categories }) {
     const data = new FormData(event.target);
     const formObj = Object.fromEntries(data);
     formObj.goodWeather = event.target.goodWeather.checked;
-    console.log(formObj);
+
     if (formObj.name !== "") {
       onAddActivity(formObj);
       event.target.reset();
