@@ -15,6 +15,14 @@ export default function ListHeading({ weather, weatherCondition }) {
     stormy: stormyIcon,
     sunny: sunnyIcon,
   };
+  const messages = {
+    cloudy: "Clouds everywhere",
+    partlySunny: "The sun is shy",
+    rainy: "It's raining",
+    snow: "Snow is falling",
+    stormy: "We have a storm",
+    sunny: "The sun is shining",
+  };
   return (
     <header className="main">
       <div className="top-header">
@@ -27,16 +35,11 @@ export default function ListHeading({ weather, weatherCondition }) {
         </span>
       </div>
       <h1>
+        {messages[weatherCondition]} <br />
         {weather.isGoodWeather ? (
-          <>
-            The weather is awesome! <br />
-            <span className="smaller">Go outside and...</span>
-          </>
+          <span className="smaller">Go outside and...</span>
         ) : (
-          <>
-            Bad weather outside! <br />
-            <span className="smaller">Here&apos;s what you can do now...</span>
-          </>
+          <span className="smaller">Here&apos;s what you can do now...</span>
         )}
       </h1>
     </header>
