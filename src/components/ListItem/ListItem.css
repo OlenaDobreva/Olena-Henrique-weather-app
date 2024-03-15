@@ -16,8 +16,8 @@ ul li .category {
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 0.9rem;
-  padding: 3px 8px;
+  font-size: 0.8rem;
+  padding: 3px 5px;
   border-radius: 3px;
   margin: 0 10px 0 0;
 }
@@ -26,10 +26,10 @@ ul li .category.Sports {
   background-color: #ff0000;
 }
 ul li .category.Cooking {
-  background-color: #ff9500;
+  background-color: #cf7c08;
 }
 ul li .category.Learning {
-  background-color: #ffcc00;
+  background-color: #caa40b;
 }
 ul li .category.Social {
   background-color: #0fa114;
