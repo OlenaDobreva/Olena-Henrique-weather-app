@@ -2,16 +2,3 @@ ul {
   list-style: none;
   padding: 0;
 }
-ul li {
-  background-color: #fff;
-  border-radius: 5px;
-  margin: 10px 0;
-  padding: 10px 10px 10px 15px;
-  display: flex;
-  justify-content: space-between;
-}
-
-li.empty-activities {
-  background-color: #cb6751;
-  color: #fff;
-}
