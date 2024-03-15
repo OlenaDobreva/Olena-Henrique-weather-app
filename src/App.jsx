@@ -6,6 +6,7 @@ import { uid } from "uid";
 import { useEffect, useState } from "react";
 import useLocalStorageState from "use-local-storage-state";
 import { storedActivities } from "./data/data";
+import { emojiToCondition } from "./data/conditions";
 
 function App() {
   const [activities, setActivities] = useLocalStorageState("activities", {
@@ -14,14 +15,6 @@ function App() {
 
   const [weather, setWeather] = useState("");
 
-  const emojiToCondition = {
-    "🌤️": "partlySunny",
-    "🌧️": "rainy",
-    "☀️": "sunny",
-    "☁️": "cloudy",
-    "🌨️": "snow",
-    "⛈️": "stormy",
-  };
   let weatherCondition = emojiToCondition[weather.condition] || "";
 
   async function fetchWeather() {
