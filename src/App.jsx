@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import useLocalStorageState from "use-local-storage-state";
 import { storedActivities } from "./data/activities";
 import { emojiToCondition } from "./data/conditions";
+import { categories } from "./data/categories";
 
 function App() {
   const [activities, setActivities] = useLocalStorageState("activities", {
@@ -65,7 +66,7 @@ function App() {
           activities={filteredActivities}
           onDeleteActivity={handleDeleteActivity}
         />
-        <Form onAddActivity={handleAddActivity}></Form>
+        <Form onAddActivity={handleAddActivity} categories={categories}></Form>
       </div>
     </div>
   );
