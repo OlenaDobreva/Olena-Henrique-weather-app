@@ -1,3 +1,4 @@
+import "./ListItem.css";
 import Button from "../Button/Button";
 import { categories } from "../../data/categories";
 

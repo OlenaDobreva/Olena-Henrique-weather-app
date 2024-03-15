@@ -1,0 +1,42 @@
+ul li {
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px 10px 10px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li.empty-activities {
+  background-color: #cb6751;
+  color: #fff;
+}
+
+ul li .category {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin: 0 10px 0 0;
+}
+
+ul li .category.Sports {
+  background-color: #ff0000;
+}
+ul li .category.Cooking {
+  background-color: #ff9500;
+}
+ul li .category.Learning {
+  background-color: #ffcc00;
+}
+ul li .category.Social {
+  background-color: #0fa114;
+}
+ul li .category.Family {
+  background-color: #1b61b1;
+}
+ul li .category.Cultural {
+  background-color: #61169e;
+}
